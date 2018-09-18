@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Slider | Meet Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/frame.png" alt="">
+        </div>
+        <div class="menu-btn">
+            <img src="img/menu.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <p>OUR TEAM</p>
+    </div>
+
+    <section class="center slider">
+        <div>
+            <img src="img/person1.jpeg" alt="first person">
+            <h3>Chief Diversity Officer</h3>
+            <p>"Are they wood or bricks? What am I, a materials scientician?"</p>
+        </div>
+
+        <div>
+            <img src="img/person2.jpeg" alt="second person">
+            <h3>Director of Looking Busy</h3>
+            <p>"I should put my plant by the window, but I like to disguise<br>my sadism under the ethos of adaptability." </p>
+        </div>
+
+        <div>
+            <img src="img/person3.jpeg" alt="third person">
+            <h3>Senior Casual Looking Professional</h3>
+            <p>"Standing amongst traffic really gets my creativity going."</p>
+        </div>
+
+        <div>
+            <img src="img/person4.jpeg" alt="fourth person">
+            <h3>Associate UX Designer</h3>
+            <p>"Sometimes I have so many ideas, that I have to seal the back <br>of my skull with my hair."</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+
+        $('.center').slick({
+
+            infinite: true,
+            dots: false,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 4,
+            arrows: false,
+
+            responsive: [
+                {
+                breakpoint: 800,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 1
+                }
+                },
+                {
+                breakpoint: 800,
+                settings: {
+                    dots: true,
+                    slidesToShow: 3
+                }
+                },
+                {
+                    breakpoint: 300,
+                    settings: "unslick"
+                }]
+            });
+	
+        });
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(../img/background.jpeg);
+    background-size: cover;
+}
+
+
+.slider {
+    width: 100%;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-slide img {
+    width: 42%;
+}
+
+.slick-slide {
+    transition: all ease-in-out 1s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .2;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+h3 {
+    font-family: Poppins;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 4px;
+    font-family: Poppins;
+    color: snow;
+    font-style:  italic;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.logo {
+    position: absolute;
+    margin: 2em;
+    float: left;
+    width: 20px;
+}
+
+.logo img, .menu-btn img{
+    width: 30px;
+    background-color: #c9c5c59e;
+    padding: 5px;
+    opacity: .6;
+    border-radius: 6px;
+}
+
+.menu-btn {
+    position: relative;
+    float: right;
+    margin: 2em;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 6px;
+    left: 2em;
+}
+
+.bottom p {
+    color: #fff;
+    font-weight: 400;
+    background: #7c2121;
+    opacity: .6;
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 4px;
+}
